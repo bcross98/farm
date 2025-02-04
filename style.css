@@ -115,7 +115,7 @@ body {
         text-align: center;
         color: var(--white);
     }
-    #toTop {
+    .toTop {
         position: fixed;
         margin: 0;
         padding: 10px;
@@ -224,8 +224,40 @@ body {
     }
     #desktop {
         display: inline;
+        align-content: center;
     }
-    #top {
-        display: block;
+    #tnd {
+        padding-bottom: 2em;
+    }
+    #desktop li {
+        display: inline-flex;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    #hours {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    dl {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 5px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #fruitForSale, #vegetablesForSale {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
